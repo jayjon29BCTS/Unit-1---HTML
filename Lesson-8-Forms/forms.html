@@ -7,34 +7,40 @@
 </head>
 <body>
     <h1>Contact Form</h1>  
-    <form action="">
+    <form action="results.html" >
         <table>
             <!-- Basic Text -->
             <tr>
-                <td><label for="username">Username</label></td>
+                <td><label for="username">Username:</label></td>
                 <td><input type="text" name="username" id="username"></td>
             </tr>
             <!-- Email with validation -->
             <tr>
-                <td><label for="email">Email</label></td>
+                <td><label for="email">Email:</label></td>
                 <td><input type="email" name="email" id="email"></td>
             </tr>
             <!-- Password (hidden) -->
             <tr>
-                <td><label for="password">Password</label></td>
+                <td><label for="password">Password:</label></td>
                 <td><input type="password" name="password" id="password"></td>
             </tr>
             <!-- Phone number -->
             <tr>
-                <td><label for="phone">Phone</label></td>
+                <td><label for="phone">Phone:</label></td>
                 <td><input type="tel" name="phone" id="phone"></td>
             </tr>
             <!-- Website URL -->
             <tr>
                 <td><label for="website">Website:</label></td>
                 <td><input type="url" name="webiste" id="website"></td>
+            </tr>
                 <!-- Date & Time -->
-                <td><input type="time" name="time" id="time"></td>
+            <tr>
+                <td><label for="time">Time:</label></td>
+                <td></td><input type="time" name="time" id="time"></td>
+            </tr>
+            <tr>
+                <td><input for="date">Date:</label></td>
                 <td><input type="date" name="date" id="date"></td>
             </tr>
             <!-- Multi-line Text Area -->
@@ -50,9 +56,32 @@
                     <label><input type="radio" name="grade" value="10">10th</label>
                 </td>
               </tr>
-              <!-- Select (Drop Down) -->
+             <!-- Checkboxes -->
+              <tr>
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="grade" value="9">9th grade</label>
+                    <label><input type="checkbox" name="grade" value="10">10th grade</label>
+                    <label><input type="checkbox" name="grade" value="10">11th grade</label>
+                </td>
+              </tr>
 
+              <!-- Select (Drop Down) -->
+               <tr>
+                    <td>Favorite Sports</td>
+                    <td>
+                        <label for="sports">Select</label>
+                        <select name="sports" id="sports">
+                            <option value="" selected disabled>Select a sport:</option>
+                            <option value="soccer">Soccer</option>
+                            <option value="baseball">Baseball</option>
+                            <option value="basketball">Basketball</option>
+                        </select>
+                    </td>
+               </tr>
         </table>
+        <!-- <input type="submit" value="Submit"> -->
+         <button type="submit" >Submit</button>
     </form>
     
 </body>
